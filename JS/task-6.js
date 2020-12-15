@@ -21,13 +21,6 @@ while (true) {
     }
 
     input = Number(input);
-    const notANumber = Number.isNAN(input);
-
-    if (notANumber) {
-        alert = (`Было введено не число, попробуйте еще раз`);
-        continue;
-    }
-
     total += input; 
  
 } 
