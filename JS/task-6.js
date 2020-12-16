@@ -11,8 +11,9 @@
 'use strict';
 
 let total = 0;
+let input;
 
-while (true) {
+while (input !== null) {
     let input = prompt('Введите число');
 
     if (input === null) {
@@ -26,3 +27,4 @@ while (true) {
 } 
     
 console.log(`Общая сумма чисел равна ${total}`);
+

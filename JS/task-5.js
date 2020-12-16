@@ -14,12 +14,13 @@
 
 
 const country = prompt('Укажите страну доставки');
+let price;
 
 if (!country) {
     alert('Отменено пользователем!');
 
 } else if (Number.isInteger(+country)) {
-    alert ('введите число');
+    alert ('введите не число');
 }
 
 else { 
@@ -29,36 +30,34 @@ else {
 switch (normalizedCountry) {
     case 'китай': {
         price = 100;
-        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`)
-        break;
+         break;
     }
     case 'чили': {
         price = 250;
-        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`)
-        break;
-        }
+      }
     case 'австралия': {
         price = 170;
-        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`)
         break;
     }
         
      case 'индия': {
         price = 80;
-        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`)
         break;
     }
     case 'ямайка': {
         price = 120;
-        console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`)
-        break;
-    }
-        
+       break;
+    } 
+    
     default:
-        console.log ('В вашей стране доставка не доступна');
-    }
+        console.log('В вашей стране доставка не доступна');
+        
+    } console.log(`Доставка в ${normalizedCountry} будет стоить ${price} кредитов`);
+        
+    
     }
 
 
     
+
 // let country= charAt(0).toUpperCase(); to check trim!
